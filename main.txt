@@ -1,0 +1,10 @@
+let http =require("http"),
+    fs = require("fs");
+
+function writeNumber(res) {
+    let counter = 0;
+    for(let i = 0; i<100; i++){
+        counter++;
+        res.write(`${counter}\n`);
+    }
+}
